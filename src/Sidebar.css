@@ -1,0 +1,109 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.navbar-menu {
+  position: relative;
+  margin-top: 10px;
+  margin-left: -100px;
+  width: 40px;
+  background-color: white;
+  cursor: pointer;
+  display: none;
+}
+
+h1 {
+  display: flex;
+  margin-top: 60px;
+  color: goldenrod;
+  margin-bottom: 20px;
+  padding-left: 38px;
+}
+
+.nav {
+  flex: 1;
+  text-align: left;
+}
+
+.nav ul li {
+  list-style: none;
+  display: flex;
+  margin-left: 5px;
+  margin-top: 35px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 18px;
+}
+
+.nav ul li a:hover {
+  color: red;
+}
+
+button {
+  border: none;
+  width: 80px;
+  height: 40px;
+  background-color: tomato;
+  background: linear-gradient(to right, tomato, red);
+  color: white;
+  border-radius: 19px;
+  font-size: 15px;
+  position: relative;
+  top: 20px;
+  margin-left: 100px;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+
+button:hover {
+  width: 100px;
+  background-color: tomato;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar-menu {
+    position: absolute;
+    left: 93px;
+    top: -150px;
+  }
+
+  .menu-heading {
+    position: absolute;
+    left: 38px;
+    top: -18px;
+  }
+
+  .nav ul {
+    width: 100%;
+    background: linear-gradient(to right, tomato, #ff575a);
+    border-radius: 10px;
+    position: absolute;
+    top: 180px;
+    margin-left: 10px;
+    margin-top: 10px;
+    z-index: 2;
+  }
+
+  .nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .nav ul li a {
+    color: #fff;
+  }
+
+  .navbar-menu {
+    display: block;
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    top: 40px;
+  }
+}

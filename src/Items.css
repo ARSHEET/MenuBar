@@ -1,0 +1,102 @@
+.Items {
+  background: whitesmoke;
+}
+
+.heading {
+  position: relative;
+  left: 40px;
+  color: goldenrod;
+  font-size: 50px;
+  margin-top: 10px;
+  width: 80vh;
+  text-align: left;
+  line-break: auto;
+}
+
+.qoute {
+  width: 35vh;
+  left: 900px;
+  top: 100px;
+  position: relative;
+  text-align: left;
+  line-break: auto;
+  color: gray;
+  line-break: auto;
+  margin-top: 30px;
+  border-width: 1px;
+}
+
+.qoute:hover {
+  color: tomato;
+}
+
+hr {
+  position: relative;
+  left: 400px;
+  top: 100px;
+  background-color: tomato;
+  padding-left: 40px;
+  width: 10px;
+  border-width: 1px;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  top: 100px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  width: 190px;
+  height: 180px;
+  display: inline-flex;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-top: 20px;
+  line-break: auto;
+}
+
+.menu-items img {
+  display: inline-flex;
+  position: relative;
+  top: 10px;
+  width: 95px;
+  height: 90px;
+  border-radius: 43px;
+  left: 45px;
+  cursor: pointer;
+}
+
+.menu-items span {
+  position: relative;
+  top: 120px;
+  right: 45px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  line-break: auto;
+}
+
+.menu-items span:hover {
+  color: tomato;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 700px) {
+  .heading {
+    position: absolute;
+    left: -20px;
+    font-size: 30px;
+    width: 50%px;
+  }
+  nav {
+    position: relative;
+    bottom: -680px;
+    left: -860px;
+  }
+
+  .container {
+    position: relative;
+    top: 45px;
+    width: 153px;
+  }
+}
